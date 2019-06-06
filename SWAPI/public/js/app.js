@@ -22,6 +22,11 @@ $(document).ready(function()
 		$("#btnnext").click(shownext);
 	});
 	$("#pname").html("Loading ...");
+	$("#rotation_period").html("Loading ...");
+	$("#orbital_period").html("Loading ...");
+	$("#diameter").html("Loading ...");
+	$("#climate").html("Loading ...");
+
 });
 
 function shownext()
