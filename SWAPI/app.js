@@ -2,7 +2,7 @@ let express = require("express"),
     app     = express();
 
 let indexRouter = require("./routers/index/index");
-
+app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 

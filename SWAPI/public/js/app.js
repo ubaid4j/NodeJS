@@ -4,11 +4,18 @@ let pplarr=new Array();
 
 $(document).ready(function()
 {
-    $.getJSON("https://swapi.co/api/people/?format=json&page=2", function (data)
+    $.getJSON("https://swapi.co/api/planets/?format=json", function (data)
     {
 	    totrec=data.results.length;
 		for (let x of data.results) {
-			pplarr.push(x.name);
+			localArray = new Array();
+			localArray.push(x.name);
+			localArray.push(x.rotation_period);
+			console.log(x.rotation_period);
+			localArray.push(x.orbital_period);
+			localArray.push(x.diameter);
+			localArray.push(x.climate);	
+			pplarr.push(localArray);
 		}
 		shownext();
 		$("#btnnext").attr("disabled",false);
@@ -20,7 +27,12 @@ $(document).ready(function()
 function shownext()
 {
 	$("#reccount").html( " (" + (currec+1) + " of " + totrec + ")");
-	$("#pname").html(pplarr[currec]);
+	$("#pname").html("Name:\t" + pplarr[currec][0]);
+	$("#rotation_period").html("Rotation Period:\t" + pplarr[currec][1]);
+	$("#orbital_period").html("Orbital Period:\t" + pplarr[currec][2]);
+	$("#diameter").html("Diameter:\t" + pplarr[currec][3]);
+	$("#climate").html("Climate:\t" + pplarr[currec][4]);
+
 	currec++;
 	if (totrec == currec)
 	{
