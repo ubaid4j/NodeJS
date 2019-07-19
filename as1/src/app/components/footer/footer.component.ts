@@ -1,15 +1,29 @@
 import { Component, OnInit } from '@angular/core';
+import {LoginName} from "../../myLoginName";
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent implements OnInit
+{
 
-  constructor() { }
+    name : String;
+    loginName : String;
+    studentNumber : String;
+    campusName : String;
 
-  ngOnInit() {
-  }
+    constructor()
+    {
+        let data : LoginName = new LoginName();
+        this.name = data.getName();
+        this.loginName = data.getLoginName();
+        this.campusName = data.getCampusName();
+        this.studentNumber = data.getStudentNumber();
+    }
+
+    ngOnInit() {
+    }
 
 }
