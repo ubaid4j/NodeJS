@@ -1,1 +1,29 @@
-<p>ubaidrehman works!</p>
+<div class="wrapper">
+    <div class="box header">Books Detail</div>
+    <div class="box sidebar">
+
+        <mat-list *ngFor="let book of books">
+            <mat-list-item>
+                <button (click)="onActionListener(book.getId())">
+                    <img src="{{book.getPicture()}}" width="70xp" height="60px">
+                </button>
+             </mat-list-item>
+        </mat-list>
+    </div>
+    <div class="box content">
+        <table class="t1">
+            <tr>
+                <th>Name</th>
+                <td>{{book.getName()}}</td>
+            </tr>    
+            <tr>
+                <th>Author</th>
+                <td>{{book.getAuthor()}}</td>
+            </tr>    
+            <tr>
+                <th>Published Year</th>
+                <td>{{book.getYearPublished()}}</td>
+            </tr>            
+        </table>
+    </div>
+</div>

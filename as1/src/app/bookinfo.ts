@@ -4,9 +4,11 @@ export class BookInfo
     private author : String;
     private yearPublished : String;
     private picture : String;
+    private id : number;
 
-    constructor(name : String, author : String, yearPublished : String, picture : String)
+    constructor(id: number, name : String, author : String, yearPublished : String, picture : String)
     {
+        this.id = id;
         this.name = name;
         this.author = author;
         this.yearPublished = yearPublished;
@@ -45,6 +47,14 @@ export class BookInfo
         this.picture = picture;
     }
 
+    public getId() : number 
+    {
+        return this.id;
+    }
 
+    public setId(id : number) : void
+    {
+        this.id = id;
+    }
     
 }

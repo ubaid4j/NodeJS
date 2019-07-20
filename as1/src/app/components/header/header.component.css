@@ -136,4 +136,5 @@ body.fixed .header-fixed .header-limiter nav {
 body{
   margin: 0px;
   padding: 0px;
+  height: 20px;
 }
