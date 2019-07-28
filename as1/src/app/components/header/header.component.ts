@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {LoginName} from "../../myLoginName";
+import {SHAHAAG} from "../../shahaag";
 
 @Component({
   selector: 'app-header',
@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
 
 
   constructor() { 
-    let data: LoginName = new LoginName();
+    let data: SHAHAAG = new SHAHAAG();
     this.assignmentTitle = data.getassignmentTitle();
     this.name = data.getName();
   }

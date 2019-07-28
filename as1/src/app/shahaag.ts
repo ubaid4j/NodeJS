@@ -1,10 +1,10 @@
-export class LoginName
+export class SHAHAAG
 {
-    private name : String = "Ubaid ur Rehman";
-    private loginName : String = "ubaid.rehman";
-    private campus : String = "National University of Sciences and Technology";
-    private assignmentTitle : String = "Angular 8 Assignment # 1";
-    private studentNumber : String = "00000147106";
+    private name : String = "AAGAM SHAH";
+    private loginName : String = "SHAHAAG";
+    private campus : String = "SHERIDAN DAVIS CAMPUS";
+    private assignmentTitle : String = "Angular 8 Assignment # 4";
+    private studentNumber : String = " 991491807";
 
     public getName() : String 
     {
