@@ -1,0 +1,20 @@
+{
+    "name" : {
+        "scientiifc_name" : "Felis catus",
+        "family_name" : "Felidae",
+        "kingdon_name" : "Animalia",
+        "classification_pic": "assets/images/cat_classification.png"
+    },
+    "detail" : {
+        "lifeSpan" : "2 - 6 years",
+        "mass" : "3.6 - 4.5 ky",
+        "daily_sleep" : "12 - 16 hours",
+        "pic" : "assets/images/cat_detail.png"
+    },
+    "breeds" : {
+        "breed_1" : "Abyssinian", 
+        "breed_1_img" : "assets/images/cat_breed_1.jpg",
+        "breed_2" : "Balinese",
+        "breed_2_img" : "assets/images/cat_breed_2.jpg"
+    }
+}
