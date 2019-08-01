@@ -24,8 +24,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 export class ShahaagComponent implements OnInit {
 
-	data : any;
-
+	data1 : any = new Object();
+  data2 : any = new Object();
 	constructor(private service : HttpClient)
 	{
 		// service.fetchData().then(() => console.log(service.data))
@@ -33,22 +33,34 @@ export class ShahaagComponent implements OnInit {
 
 	ngOnInit()
 	{
-        this.getData().then((data : any) => {
-            console.log(data);
-            this.data = data;
+        this.getData1().then((data1 : any) => {
+            this.data1 = data1;
         });
+
+        this.getData2().then((data2 : any) => {
+          this.data2 = data2;
+        });
+
     }
 
-    async getData()
+    async getData1()
     {
-		let result = await this.service
-        .get("./assets/jsonFiles/cat.json").toPromise();
+      let result = await this.service
+          .get("./assets/jsonFiles/cat.json").toPromise();
 
-        return result;
-        // .subscribe(res => this.data = res);
-
+          return result;
     }
-  
+
+    async getData2()
+    {
+      let result = await this.service
+          .get("./assets/jsonFiles/horse.json").toPromise();
+
+          return result;
+    }
+    
+
+
     click1()
     {
         console.log("llllllllllllllllll");

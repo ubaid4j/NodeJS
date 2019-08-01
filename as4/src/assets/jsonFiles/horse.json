@@ -3,7 +3,7 @@
         "scientiifc_name" : "Equus caballus",
         "family_name" : "Equidae",
         "kingdon_name" : "Animalia",
-        "classification_pic": "assets/images/classification_horse.png"
+        "classification_pic": "assets/images/classification_horse.jpg"
     },
     "detail" : {
         "lifeSpan" : "25 – 30 years",

@@ -1,4 +1,26 @@
+
+
 img{
     width: 80px;
     height: 40px;
+}
+
+.id{
+    margin-top: 160px;
+}
+
+#yarHoJa{
+    margin-top: 100px;
+}
+
+.first_one{
+    float: left;
+}
+
+.details_{
+    margin: 20px;
+}
+
+.second_One{
+    float: left;
 }

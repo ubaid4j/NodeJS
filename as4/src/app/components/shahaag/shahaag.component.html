@@ -1,62 +1,71 @@
+<div id="yarHoJa">
         <mat-tab-group>        
-                <mat-tab label="First" (click)="click1()">
+                <mat-tab label="Cat" (click)="click1()">
         
+                <div class="first_one">
                     <h2>Name</h2>
                     <ol>
-                        <li>Scientific Name: {{data["name"]["scientiifc_name"]}}</li>
-                        <li>Family Name: {{data["name"]["family_name"]}}</li>
-                        <li>Kingdom Name: {{data["name"]["kingdon_name"]}}</li>
-                        <li>Image: <img src="{{data['name']['classification_pic']}}"/></li>
+                        <li>Scientific Name: {{data1["name"]["scientiifc_name"]}}</li>
+                        <li>Family Name: {{data1["name"]["family_name"]}}</li>
+                        <li>Kingdom Name: {{data1["name"]["kingdon_name"]}}</li>
+                        <li>Image: <img src="{{data1['name']['classification_pic']}}"/></li>
                     </ol>
+                </div>
         
-        
+                <div class="first_one">
                     <h2>Detail</h2>
                     <ol>
-                        <li>Life Span: {{data["detail"]["lifeSpan"]}}</li>
-                        <li>Mass: {{data["detail"]["mass"]}}</li>
-                        <li>Daily Sleep: {{data["detail"]["daily_sleep"]}}</li>
-                        <li>Image: <img src="{{data['detail']['pic']}}"/></li>
+                        <li>Life Span: {{data1["detail"]["lifeSpan"]}}</li>
+                        <li>Mass: {{data1["detail"]["mass"]}}</li>
+                        <li>Daily Sleep: {{data1["detail"]["daily_sleep"]}}</li>
+                        <li>Image: <img src="{{data1['detail']['pic']}}"/></li>
                     </ol>
+                </div>
         
-        
+                <div class="first_one">
                     <h2>Breed</h2>
                     <ol>
-                        <li>Breed 1: {{data["breeds"]["breed_1"]}}</li>
-                        <li>Breed 1 Pic: <img src="{{data['breeds']['breed_1_img']}}"/></li>
-                        <li>Breed 2: {{data["breeds"]["breed_2"]}}</li>
-                        <li>Breed 2 Pic: <img src="{{data['breeds']['breed_2_img']}}"/></li>
+                        <li>Breed 1: {{data1["breeds"]["breed_1"]}}</li>
+                        <li>Breed 1 Pic: <img src="{{data1['breeds']['breed_1_img']}}"/></li>
+                        <li>Breed 2: {{data1["breeds"]["breed_2"]}}</li>
+                        <li>Breed 2 Pic: <img src="{{data1['breeds']['breed_2_img']}}"/></li>
                     </ol>
+                </div>
         
         
                 </mat-tab>
         
-                <mat-tab label="Second">
+                <mat-tab label="Horse">
+
+                    <div class="second_One">
                         <h2>Name</h2>
                         <ol>
-                            <li>Scientific Name: {{data["name"]["scientiifc_name"]}}</li>
-                            <li>Family Name: {{data["name"]["family_name"]}}</li>
-                            <li>Kingdom Name: {{data["name"]["kingdon_name"]}}</li>
-                            <li>Image: <img src="{{data['name']['classification_pic']}}"/></li>
-                        </ol>
+                            <li>Scientific Name: {{data2["name"]["scientiifc_name"]}}</li>
+                            <li>Family Name: {{data2["name"]["family_name"]}}</li>
+                            <li>Kingdom Name: {{data2["name"]["kingdon_name"]}}</li>
+                            <li>Image: <img src="{{data2['name']['classification_pic']}}"/></li>
+                        </ol>    
+                    </div>
             
-            
+                    <div class="second_One"> 
                         <h2>Detail</h2>
                         <ol>
-                            <li>Life Span: {{data["detail"]["lifeSpan"]}}</li>
-                            <li>Mass: {{data["detail"]["mass"]}}</li>
-                            <li>Daily Sleep: {{data["detail"]["daily_sleep"]}}</li>
-                            <li>Image: <img src="{{data['detail']['pic']}}"/></li>
+                            <li>Life Span: {{data2["detail"]["lifeSpan"]}}</li>
+                            <li>Mass: {{data2["detail"]["mass"]}}</li>
+                            <li>Daily Sleep: {{data2["detail"]["daily_sleep"]}}</li>
+                            <li>Image: <img src="{{data2['detail']['pic']}}"/></li>
                         </ol>
-            
-            
+                    </div>
+                    <div class="second_One">
                         <h2>Breed</h2>
                         <ol>
-                            <li>Breed 1: {{data["breeds"]["breed_1"]}}</li>
-                            <li>Breed 1 Pic: <img src="{{data['breeds']['breed_1_img']}}"/></li>
-                            <li>Breed 2: {{data["breeds"]["breed_2"]}}</li>
-                            <li>Breed 2 Pic: <img src="{{data['breeds']['breed_2_img']}}"/></li>
+                            <li>Breed 1: {{data2["breeds"]["breed_1"]}}</li>
+                            <li>Breed 1 Pic: <img src="{{data2['breeds']['breed_1_img']}}"/></li>
+                            <li>Breed 2: {{data2["breeds"]["breed_2"]}}</li>
+                            <li>Breed 2 Pic: <img src="{{data2['breeds']['breed_2_img']}}"/></li>
                         </ol>        
+                    </div>
                 </mat-tab>
         
         </mat-tab-group>
-
+</div>
