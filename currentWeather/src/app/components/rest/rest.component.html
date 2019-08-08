@@ -2,6 +2,27 @@
 
 <div id="container_e">
 
+    <div>
+        <p>Enter City Name: </p>
+        <input  [(ngModel)]="cityName"/>
+        <input type="submit" (click)="actionListener()" />
+    </div>
+
+    <div id="info" *ngIf="is">
+        <div class="left">
+            <p>City: <span>{{city}}</span></p>
+            <p>Temperature: <span>{{temp}}K</span></p>
+            <p>Min Temperature: <span>{{minTemp}}K</span></p>
+            <p>Max Temperature: <span>{{maxTemp}}K</span></p>        
+        </div>
+
+        <div class="left">
+            <p>Latitude: <span>{{latitude}}</span></p>
+            <p>Longtitude: <span>{{longtitude}}</span></p>    
+        </div>
+
+    </div>
+
 </div>
 
 <app-footer></app-footer>

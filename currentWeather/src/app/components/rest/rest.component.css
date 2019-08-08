@@ -1,3 +1,7 @@
 #container_e{
     height: 200px;
 }
+
+.left{
+    float: left;
+}
