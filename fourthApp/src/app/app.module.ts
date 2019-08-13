@@ -8,12 +8,16 @@ import { HttpClientModule } from "@angular/common/http"
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HdaagzyComponent } from './components/hdaagzy/hdaagzy.component';
+import { Mnhac07Component } from './components/mnhac07/mnhac07.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HdaagzyComponent,
+    Mnhac07Component
   ],
   imports: [
     BrowserModule,
