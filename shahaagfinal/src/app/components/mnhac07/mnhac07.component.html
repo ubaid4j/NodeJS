@@ -4,3 +4,6 @@
 <p *ngIf="planted < 6; else other">
   Number planted is less than 6
 </p>
+<ng-template #other>
+  <p>Number planted is equal to or greater than 6</p>
+</ng-template>
