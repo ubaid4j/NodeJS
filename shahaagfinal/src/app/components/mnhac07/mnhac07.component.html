@@ -1,3 +1,6 @@
 <h3>{{shaam807}}</h3>
 <label>Aagam Enter trees planted: </label>
 <input type="text" [(ngModel)]="planted">
+<p *ngIf="planted < 6; else other">
+  Number planted is less than 6
+</p>

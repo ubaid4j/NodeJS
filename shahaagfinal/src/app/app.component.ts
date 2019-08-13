@@ -19,5 +19,5 @@ export class AppComponent
     this.bio.spic = "assets/images/test.jpg";
   }
 
-  title = 'fourthApp';
+  title = 'shahaagfinal';
 }
